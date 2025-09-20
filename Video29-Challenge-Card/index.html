@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Card</title>
+    <style>
+      .box {
+        height: 480px;
+        width: 300px;
+        border: 2px solid grey;
+        margin: 140px;
+        padding: 5px;
+        border-radius: 15px;
+      }
+      .img {
+        border-radius: 15px;
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+      }
+      .small-boxes {
+        display: flex;
+        gap: 10px;
+        margin-top: 12px;
+        margin-left: 18px;
+      }
+      .box1,.box2 {
+        height: 20px;
+        width: 50px;
+        border: 1px solid rgba(76, 75, 75, 0.2); /* semi-transparent grey border */
+        border-radius: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        padding: 0 8px;
+        background-color: white; /* keep background solid if you want */
+      }
+      h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 18px;
+      }
+      p {
+        margin-left: 18px;
+        line-height: 1.3;
+      }
+      .box3 {
+        height: 35px;
+        width: 100px;
+        border: 1px solid #E6F0FF;
+        border-radius: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        padding: 0 8px;
+        font-weight: 600;
+        color: #007bff;
+        background-color: #E6F0FF;
+        margin: auto;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img class="img" src="image.jpg" height="230px" alt="" />
+      <div class="small-boxes">
+        <div class="box1">Nature</div>
+        <div class="box2">Lake</div>
+      </div>
+      <h2>Feel the Nature</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint et inventore expedita harum aliquid error labore placeat autem praesentium tempora!</p>
+      <div class="box3">Read More</div>
+    </div>
+  </body>
+</html>
