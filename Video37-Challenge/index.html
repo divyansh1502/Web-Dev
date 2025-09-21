@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      body {
+        background-color: aliceblue;
+        font-family: "Poppins", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .nav {
+        list-style: none;
+        display: flex;
+        font-size: 1.12rem;
+        position: sticky;
+        top: 0;
+        background-color: orangered;
+        justify-content: end;
+        padding-top: 20px;
+        gap: 100px;
+        font-family: "Poppins", sans-serif;
+      }
+      li {
+        margin-right: 20px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      ul li a:hover {
+        font-weight: 800;
+        color: black;
+        border-bottom: 4px solid black;
+        transition: all 0.1s ease-in-out;
+      }
+      .search {
+        height: 30px;
+        width: 400px;
+        border-radius: 18px;
+      }
+      .box1,
+      .box2 {
+        height: 620px;
+        width: 275px;
+        margin: 50px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border: 2px solid black;
+        box-shadow: 18px 13px 50px 1px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .img1 {
+        margin: 5px;
+        border-radius: 10px;
+      }
+      .img2 {
+        margin: 5px;
+        border-radius: 10px;
+        margin-left: 10px;
+      }
+      .h2 {
+        margin-top: 32px;
+      }
+      .btn {
+        width: 120px;
+        background-color: orangered;
+        border: none;
+        font-weight: 600;
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+      }
+      .btn:hover {
+        cursor: pointer;
+      }
+      .logo {
+        border-radius: 50%;
+        margin-top: 480px;
+        margin-left:1400px;
+        position: fixed;
+        bottom: 0;
+      }
+      .thanks {
+        height: 25vh;
+        width: 96vw;
+        background-color: orangered;
+        margin: 20px;
+        border-radius: 50px;
+      }
+      .thank-text {
+        color: rgb(255, 255, 255);
+        margin-left: 500px;
+      }
+      .last {
+        margin-top: 20px;
+        margin-left: 25px;
+        color: rgb(255, 255, 255);
+      }
+      .logo2 {
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 230px;
+        padding-bottom: 5px;
+      }
+      .h3 {
+        margin-top: 20px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      
+      <ul class="nav">
+        <img class="logo2" src="logo1.jpg" height="100px" alt="">
+        <input
+          class="search"
+          type="search"
+          name="search"
+          placeholder=" Search your Meal "
+        />
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+      <main>
+        <div class="box1">
+          <img
+            class="img1"
+            src="https://th.bing.com/th/id/OIP.VqEPIFGsyh15O3BU46Zc4wHaHa?w=141&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt=""
+          />
+          <h2 class="h3">MENU</h2>
+          <pre>
+Double Whopper
+
+Cheeseburger
+
+Double Cheeseburger
+
+Bacon King
+
+Rodeo Burger
+
+Veggie Whopper
+
+Chicken Fries
+
+Tendercrisp Chicken Sandwich
+
+Chicken Nuggets (6 pcs)
+
+Chicken Nuggets (9 pcs)
+          </pre>
+          <button class="btn">More items</button>
+        </div>
+        <div class="box1">
+          <img
+            class="img1"
+            src="https://www.bing.com/th/id/OIP.sALR_WfsFv1WwmggILsLeQHaHe?w=206&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+            alt=""
+          />
+          <h2 class="h1">MENU</h2>
+          <pre>
+Whopper
+
+Double Whopper
+
+Cheeseburger
+
+Double Cheeseburger
+
+Bacon King
+
+Rodeo Burger
+
+Veggie Whopper
+
+Chicken Fries
+          </pre>
+          <button class="btn">More items</button>
+        </div>
+        <div class="box2">
+          <img
+            class="img2"
+            src="data:image/webp;base64,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"
+            alt=""
+          />
+          <h2 class="h2">MENU</h2>
+          <pre>
+Spicy Crispy Chicken Sandwich
+
+Original Chicken Sandwich
+
+Tendercrisp Chicken Sandwich
+
+Chicken Nuggets (6 pcs)
+
+Chicken Nuggets (9 pcs)
+
+Onion Rings
+
+French Fries
+
+Mozzarella Sticks
+          </pre>
+          <button class="btn">More items</button>
+        </div>
+        <div class="box2">
+          <img
+            class="img2"
+            src="https://th.bing.com/th/id/OIP.pwMPtWJNs3FbmgsGmLE1LwHaHa?w=179&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+            alt=""
+          />
+          <h2 class="h2">MENU</h2>
+          <pre>
+Spicy Crispy Chicken Sandwich
+
+Original Chicken Sandwich
+
+Tendercrisp Chicken Sandwich
+
+Chicken Nuggets (6 pcs)
+
+Chicken Nuggets (9 pcs)
+
+Onion Rings
+
+French Fries
+
+Mozzarella Sticks
+          </pre>
+          <button class="btn">More items</button>
+        </div>
+        <img class="logo" src="logo1.jpg" height="100px" alt="">
+      </main>
+      <footer>
+        <div class="thanks">
+          <h1 class="thank-text">Thanks for using our Website</h1>
+          <p class="last">“**“Thank you for ordering with MyQRder! 🙌
+We truly appreciate your trust in us. Your order has been placed successfully and is now being prepared fresh by the restaurant team. 🍔🍕🌮
+
+You can relax and enjoy your time—we’ll notify you as soon as your meal is ready for pickup or delivery. Our goal is to make dining quicker, easier, and more enjoyable for you.
+
+We’re delighted to have you as part of the MyQRder family, and we hope this experience makes your mealtime smoother than ever.
+Bon appétit and see you again soon! ❤️”**”</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi color Website</title>
+    <style>
+        body {
+            background-color: rgb(255, 232, 211);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --color: rgb(0, 225, 255);
+            --secolor: rgba(62, 62, 62, 0.989);
+            --defpad: 23px;
+        }
+        .box {
+            display: flex;
+            padding: 30px;
+            list-style: none;
+            background-color: var(--secolor);
+            color: var(--color);
+        }
+        li {
+            margin-left: 25px;
+            padding: 35px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-family: Arial;
+            transition: all 0.3s ease-out;
+            
+        }
+        li:hover {
+            color: rgb(255, 255, 255);
+            border-radius: 50%;
+            border-bottom: 4px solid rgb(18, 148, 16);
+            border-top: 6px solid orange;
+            
+        }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .search {
+        height: 30px;
+        width: 400px;
+        margin-top: 30px;
+        margin-left: 30px;
+        border-radius: 5px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <ul class="box">
+                <img class="logo" src="logo1.jpg" height="100px" alt="">
+                <li>Home</li>
+                <li>Products</li>
+                <li>Cart</li>
+                <li>My Order</li>
+                <li>About</li>
+                <li>Help</li>
+                <input class="search" type="search" name="search" placeholder=" Search your food">
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
