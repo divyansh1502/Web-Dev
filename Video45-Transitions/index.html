@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transition</title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+            display: flex;
+        }
+        .box {
+            background-color: aqua;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: transform, background-color;
+            transition-duration: 1.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s; */
+            transition: all 1s ease-in-out .1s;
+        }
+        .box:hover {
+            transform: translateX(200px)  translateY(200px) scale(2) rotate(182deg) skew(25deg);
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
