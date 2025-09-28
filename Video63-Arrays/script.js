@@ -26,3 +26,8 @@ delete arr[5];
 console.log(arr);
 let a = arr.concat(arr2);
 console.log(a);
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+numbers.splice(1,3);
+console.log(numbers);
+numbers.splice(1,3, 222, 266);
+console.log(numbers);
